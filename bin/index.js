@@ -12,7 +12,7 @@ if (process.stdin.isTTY) {
 
 const HEADER = `
 ==========================================
-    Antigravity Kit Setup
+    Antigravity Kit Setup by NghiaPT
 ==========================================
 `;
 
@@ -26,17 +26,14 @@ const LOCAL_DEST = path.join(process.cwd(), '.agent', 'workflows');
 const OPTIONS = [
     {
         label: 'Install Global (Recommended)',
-        desc: 'Copies to ~/.gemini/antigravity/global_workflows',
         action: async () => await installWorkflows(GLOBAL_DEST, 'Global')
     },
     {
-        label: 'Install Only on Context Project',
-        desc: 'Copies to ./.agent/workflows',
+        label: 'Install Only on Current Project',
         action: async () => await installWorkflows(LOCAL_DEST, 'Local Project')
     },
     {
         label: 'Exit',
-        desc: 'Close the setup wizard',
         action: () => process.exit(0)
     }
 ];

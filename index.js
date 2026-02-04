@@ -26,7 +26,6 @@ const LOCAL_DEST = path.join(process.cwd(), '.agent', 'workflows');
 const OPTIONS = [
     {
         label: 'Install Global (Recommended)',
-        desc: 'Copies to ~/.gemini/antigravity/global_workflows',
         action: async () => {
             await installWorkflows(GLOBAL_DEST, 'Global');
             process.exit(0);
@@ -34,7 +33,6 @@ const OPTIONS = [
     },
     {
         label: 'Install Only on Context Project',
-        desc: 'Copies to ./.agent/workflows',
         action: async () => {
             await installWorkflows(LOCAL_DEST, 'Local Project');
             process.exit(0);
@@ -42,7 +40,6 @@ const OPTIONS = [
     },
     {
         label: 'Exit',
-        desc: 'Close the setup wizard',
         action: () => process.exit(0)
     }
 ];
