@@ -17,7 +17,7 @@ const HEADER = `
 `;
 
 // Paths
-const WORKFLOWS_SRC = path.join(__dirname, 'workflows');
+const WORKFLOWS_SRC = path.join(__dirname, '..', 'workflows');
 const USER_HOME = os.homedir();
 const GLOBAL_DEST = path.join(USER_HOME, '.gemini', 'antigravity', 'global_workflows');
 const LOCAL_DEST = path.join(process.cwd(), '.agent', 'workflows');
