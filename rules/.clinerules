@@ -1,0 +1,17 @@
+# Antigravity Kit - Default Rules
+
+This file defines the operating procedures for this project, powered by Antigravity Kit.
+
+## 1. Context Intelligence
+- **Rule:** Before reading any massive folder, run `context-optimizer`.
+- **Action:** Use `python ~/.gemini/antigravity/antigravity-kit/core/context_scout.py .` to see what you are dealing with.
+
+## 2. Smart Routing
+- **Rule:** If unsure which workflow to use, use the router.
+- **Action:** `/router`
+
+## 3. State Management
+- **Rule:** Always check if there is an active plan before starting.
+- **Action:** `python ~/.gemini/antigravity/antigravity-kit/core/state_manager.py get`
+- **Rule:** When creating a plan, register it.
+- **Action:** `python ~/.gemini/antigravity/antigravity-kit/core/state_manager.py set "path/to/plan.md"`

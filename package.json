@@ -1,0 +1,23 @@
+{
+  "name": "antigravity-kit",
+  "version": "1.0.0",
+  "description": "The 'Native Gemini' Agentic Framework. Turn your IDE into an autonomous coding partner.",
+  "main": "init_project.py",
+  "bin": {
+    "antigravity-setup": "./setup.js"
+  },
+  "scripts": {
+    "setup": "node setup.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "gemini",
+    "automation",
+    "coding"
+  ],
+  "author": "NghiaPT",
+  "license": "MIT",
+  "dependencies": {}
+}
