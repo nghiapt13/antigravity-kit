@@ -27,12 +27,18 @@ const OPTIONS = [
     {
         label: 'Install Global (Recommended)',
         desc: 'Copies to ~/.gemini/antigravity/global_workflows',
-        action: async () => await installWorkflows(GLOBAL_DEST, 'Global')
+        action: async () => {
+            await installWorkflows(GLOBAL_DEST, 'Global');
+            process.exit(0);
+        }
     },
     {
         label: 'Install Only on Context Project',
         desc: 'Copies to ./.agent/workflows',
-        action: async () => await installWorkflows(LOCAL_DEST, 'Local Project')
+        action: async () => {
+            await installWorkflows(LOCAL_DEST, 'Local Project');
+            process.exit(0);
+        }
     },
     {
         label: 'Exit',
