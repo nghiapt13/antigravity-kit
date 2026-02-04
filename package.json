@@ -1,6 +1,6 @@
 {
   "name": "@nghiapt/kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The 'Native Gemini' Agentic Framework. Turn your IDE into an autonomous coding partner.",
   "main": "init_project.py",
   "bin": {
