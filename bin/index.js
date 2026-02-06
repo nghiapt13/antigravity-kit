@@ -26,11 +26,17 @@ const LOCAL_DEST = path.join(process.cwd(), '.agent', 'workflows');
 const OPTIONS = [
     {
         label: 'Install Global (Recommended)',
-        action: async () => await installWorkflows(GLOBAL_DEST, 'Global')
+        action: async () => {
+            await installWorkflows(GLOBAL_DEST, 'Global');
+            process.exit(0);
+        }
     },
     {
-        label: 'Install Only on Current Project',
-        action: async () => await installWorkflows(LOCAL_DEST, 'Local Project')
+        label: 'Install Only on Context Project',
+        action: async () => {
+            await installWorkflows(LOCAL_DEST, 'Local Project');
+            process.exit(0);
+        }
     },
     {
         label: 'Exit',
